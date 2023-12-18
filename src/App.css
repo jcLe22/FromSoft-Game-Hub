@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* reset */
+#page-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: 'EB Garamond', serif;
+  --sub-font: 'Yanone Kaffeesatz', sans-serif;
+
+  --title-color: rgb(254,254,236);
+}
+
+/* NAVBAR */
+#navbar-section {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  font-family: var(--main-font);
+}
+
+#icon-logo {
+  font-weight: 400;
+  font-size: 1.5em;
+
+  text-transform: uppercase;
+}
+
+/* LOGIN */
+
+.login-container {
+  background-color: black;
+}
+
+#login-section {
+  background-image: url("https://www.digitaltrends.com/wp-content/uploads/2020/10/elden-ring-logo.jpg?p=1");
+  background-position: center;
+  background-size: cover;
+}
+
+#login-section > form {
+  font-family: var(--main-font);
+  width: 60%;
+  background-color: rgba(33, 37, 41, 0.8);
+}
+
+#login-photo {
+  object-fit: cover;
+}
+
+.page-title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 2em;
+
+  text-transform: uppercase;
+  color: rgb(254,254,236);
+}
+
+.section-column {
+  min-height: calc(100vh - 62px);
+}
+
+/* REGISTER */
+
+.register-container {
+  min-height: calc(100vh - 62px);
+  background-image: url("https://oyster.ignimgs.com/mediawiki/apis.ign.com/elden-ring/1/17/Eldenring-01-4k-1623357441326.jpg?width=1920");
+  background-position: center;
+  background-size: cover;
+}
+
+.register-container > form {
+  width: 70%;
+
+  text-transform: uppercase;
+  font-family: var(--main-font);
+
+  color: rgb(254,254,236);
+  background-color: rgba(33, 37, 41, 0.8);
+}
+
+.register-button {
+  width: 100%;
+}
+
+/* PRODUCT CARD */
+
+#game-cover {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+#customImg-container {
+  background-color: black;
+}
+
+/* PRODUCT VIEW */
+
+#product-title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 2rem;
+
+  text-transform: uppercase;
+}
+
+/* HOME CAROUSEL */
+
+.prodprev-img {
+  height: calc(100vh - 62px);
+  object-fit: cover;
+  object-position: top;
+}
+
+/* HOME SLOGAN */
+
+.slogan-sub {
+  font-family: var(--sub-font);
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.slogan-main {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 2rem;
+  
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.slogan-sub2 {
+  letter-spacing: 0.1em;
+
+  color: var(--title-color);
+}
+
+/* ERROR PAGE */
+
+.error-container {
+  min-height: calc(100vh - 62px);
+}
+
+/* ADD GAME */
+
+.addgame-container {
+  width: 50%;
+
+  text-transform: uppercase;
+  font-family: var(--main-font);
+
+  color: rgb(254,254,236);
+}
